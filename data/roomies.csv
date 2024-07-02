@@ -1,0 +1,22 @@
+id_usuario,nombre,edad,genero,"¿Con qué frecuencia limpias tu espacio?
+(donde 1 es muy raro y 10 es muy frecuente)","¿Cuánta tolerancia tienes al ruido?
+(donde 1 es muy baja tolerancia y 10 es muy alta tolerancia)","¿Fumas?
+(1=si/0=No)",¿Te importa si tu roomie fuma? (donde 1 es no tolerancia y 10 es total tolerancia),¿Tienes mascotas? (1=Sí/0=No),"¿Te gustan las mascotas?
+(donde 1 es no tolerancia y 10 es total tolerancia)","¿Eres una persona madrugador/a o noctámbulo/o?
+(1=Madrugadora/2=Noctámbula)",¿Te gusta cocinar? (1=Sí/2=No),"¿Con qué frecuencia cocinas en casa?
+(donde 1 es muy raro y 10 es muy frecuente)",¿Qué tipo de música escuchas?  (Especificar),"¿Con qué frecuencia escuchas música en casa?
+(donde 1 es muy raro y 10 es muy frecuente)",hobbies (Especificar),¿Prefieres pasar tiempo en casa o fuera de casa?:  (donde 1 es fuera de casa y 10 es en casa),¿Qué tan sociable eres?: (donde 1 es muy solitario y 10 es muy sociable),"¿Con qué frecuencia invitas a amigos o familiares a casa?
+(donde 1 es muy raro y 10 es muy frecuente)",¿Te importa si tu roomie invita a amigos o familiares?: (donde 1 es no tolerancia y 10 es total tolerancia),"¿Qué tan importante es para ti tener un espacio silencioso para trabajar o estudiar?
+(donde 1 es nada importante y 10 es muy importante)","¿Te gustan las fiestas o prefieres ambientes tranquilos?
+(donde 1 es tranquilo y 10 es fiestas)"
+1,ANTONIO LÓPEZ ANA GRISELDA,21,F,10,6,0,1,0,10,2,1,10,Pop,8,Ver Series,10,7,5,6,10,1
+2,CASTELLANOS JIMENEZ LUIS ANGEL,20,M,10,8,0,7,1,10,2,1,5,Rap,7,Ver Anime,2,3,1,10,4,5
+3,CRUZ PEREZ IVER IVAN,21,M,9,5,1,5,1,8,1,2,4,Electronica,10,Quemar cohetitos,6,4,1,5,8,10
+4,GONZALEZ REVILLA THOMAS,29,M,10,10,1,10,0,8,2,1,7,Corridos Tumbados,10,Jugar videojuegos,5,7,6,4,10,10
+5,LEON LOPEZ MAXIMILIANO,20,M,9,5,0,1,0,1,2,2,4,Regional Mexicano,7,Ver Peliculas,2,7,5,5,5,8
+6,LOPEZ RIOS LUIS ESTEBAN,22,M,8,10,0,10,0,10,2,1,6,Corridos Tumbados,10,Tocar la guitarra,8,8.5,3,10,5,9.5
+7,MENDEZ MARTINEZ PEDRO MIGUEL,20,M,7,2,0,2,0,10,1,1,10,Rock,10,Escuchar música,9,6,6,5,10,1
+8,MOLINA MENDOZA SUNASHI,20,F,9,7,1,10,0,9,2,2,1,Banda,10,Bailar,3,8,9,3,10,10
+9,ORTIZ MARTINEZ VICTOR HUGO,21,M,7,7,0,5,1,10,2,1,4,Hip-Hop,8,Jugar Videojuegos,7,5,4,5,9,4
+10,ROMERO ROMERO MARCO ANTONIO,20,M,9,5,0,1,1,10,2,1,10,Cumbias,10,Tocar la guitarra,10,7,1,5,10,1
+11,VALENCIA GARCIA VICTOR GABRIEL,20,M,9,5,0,1,1,8,2,2,10,Orquestal,6,Dibujar,10,6,1,5,10,1
