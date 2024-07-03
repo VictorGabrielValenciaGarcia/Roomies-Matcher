@@ -1,0 +1,61 @@
+{% extends "layouts/secondary.html" %}
+
+{% block title %} 
+    Roomies Matcher | Result
+{% endblock %}
+
+{% block turn_back %} 
+    /roomies
+{% endblock %}
+
+{% block content %}
+    <div class="row justify-content-center mt-2">
+        <h1 class="text-center py-0">Resultados de Compatibilidad</h1>
+        <hr>
+
+        <img src="data:image/png;base64,{{ image_data }}" alt="Gráfica" style="width: 50%; height: auto;"
+            class="img-fluid mb-3">
+
+        <div class="table-responsive">
+            <table class="table table-sm table-hover text-center" style="overflow-x:visible">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Puntaje / 1210</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Género</th>
+                        <th scope="col">Limpieza<br>(1-10)</th>
+                        <th scope="col">Tolerancia Ruido<br>(1-10)</th>
+                        <th scope="col">¿Fuma? (Si/No)</th>
+                        <th scope="col">¿Roomie Fuma?<br>(1-10)</th>
+                        <th scope="col">¿Mascotas? (Si/No)</th>
+                        <th scope="col">¿Gusta Mascotas?<br>(1-10)</th>
+                        <th scope="col">¿Madrugador/a?<br>(Si/No)</th>
+                        <th scope="col">¿Cocina? (Si/No)</th>
+                        <th scope="col">Freq. Cocina (1-10)</th>
+                        <th scope="col">Música (Especificar)</th>
+                        <th scope="col">Freq. Música (1-10)</th>
+                        <th scope="col">Hobbies (Especificar)</th>
+                        <th scope="col">Pref. Tiempo (Casa/Fuera)</th>
+                        <th scope="col">Sociabilidad (1-10)</th>
+                        <th scope="col">Visitas (1-10)</th>
+                        <th scope="col">Roomie Visitas<br>(1-10)</th>
+                        <th scope="col">Espacio Silencioso (1-10)</th>
+                        <th scope="col">Fiestas vs. Tranquilidad (1-10)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in data %}
+                        <tr>
+                            {% for value in row %}
+                                <td>{{ value }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+{% endblock %}

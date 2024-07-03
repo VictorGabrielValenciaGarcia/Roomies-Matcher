@@ -1,0 +1,49 @@
+{% extends "layouts/main.html" %}
+
+{% block title %} 
+    Roomies Matcher | Result
+{% endblock %}
+
+{% block content %}
+    <div class="card rounded shadow-lg rounded-lg col-5 px-4 py-3">
+        
+        <h2 class="text-center pt-2 pb-0">Roomies Matcher</h2>
+        <hr>
+
+        <form class="pt-3 px-4 text-center" method="post">
+
+            <div class="row mb-3">
+                <label for="user_base" style="font-weight:500" class="col-sm-5 col-form-label">Usuario Base:</label>
+                <div class="col-sm-7">
+                    <select class="form-control" id="user_base" name="user_base">
+                        <option value="" selected disabled>-- Selecciona tu Usuario --</option>
+                        {% for name in names %}
+                            <option value="{{ loop.index }}" >
+                                {{ name.title() }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            
+            <div class="mb-3 row">
+                <label for="roomies" style="font-weight:500" class="col-sm-5 col-form-label">Cant. Roomies:</label>
+                <div class="col-sm-7">
+                    <input 
+                        type="number" 
+                        class="form-control text-center" 
+                        id="roomies" 
+                        name="roomies" 
+                        min="1" max="10"
+                        value="1" 
+                        onkeydown="return false"
+                        required
+                    >
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-md btn-harsi mt-3">Buscar Roomies</button>
+        </form>
+
+    </div>
+{% endblock %}

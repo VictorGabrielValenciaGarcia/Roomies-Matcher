@@ -1,0 +1,63 @@
+{% extends "layouts/main.html" %}
+
+{% block title %}
+    Accidents | Form
+{% endblock %}
+
+{% block styles %}
+    .btn-harsi {
+        background-color: #0D6889 !important;
+        color: #fff;
+    }
+
+    .btn-harsi:hover {
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+{% endblock %}
+
+{% block content %}
+<div class="justify-content-center align-items-center g-2 d-flex vh-100">
+
+    <div class="col-5 px-4 card shadow-lg py-4 mx-4">
+        <h2 class="text-center pt-2 pb-0 m-0">Accidentes Vehiculares</h2>
+        <h6 class="text-center pt-2 pb-0 m-0">- Por Región y Periodo -</h6>
+        <hr>
+
+        <form class="pt-3 text-center" method="post">
+
+            <div class="row justify-content-center align-items-center mb-3">
+                <label for="region" style="font-weight:500" class="col-sm-3 col-form-label">Region:</label>
+                <div class="col-sm-8">
+                    <select class="form-control" id="region" name="region">
+                        <option value="" selected disabled>-- Selecciona Region a Analizar --</option>
+                        {% for region in regions %}
+                            <option value="{{ region }}" >
+                                {{ region }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-3">
+                <label for="periodo" style="font-weight:500" class="col-sm-3 col-form-label">Periodo:</label>
+                <div class="col-sm-8">
+                    <select class="form-control" id="periodo" name="periodo">
+                        <option value="" selected disabled>-- Selecciona Periodo de Interes --</option>
+                        {% for period in periods %}
+                            <option value="{{ period }}" >
+                                {{ period }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-md btn-harsi mt-3">Consultar Registros</button>
+        </form>
+    </div>
+
+</div>
+{% endblock %}
